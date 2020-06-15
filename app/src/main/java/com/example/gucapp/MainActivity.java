@@ -75,7 +75,7 @@ public class MainActivity extends AppCompatActivity {
                 temp -= 1;
                 inst.setLeaveCount(temp);
                 inst.calculateEntered();
-                disp2.setText("" + inst.getEnterCount());
+                disp2.setText("" + inst.getLeaveCount());
                 disp3.setText("" + inst.getEnteredMarket());
                 vibe.vibrate(80);
             }
