@@ -12,6 +12,17 @@
 
         <TableRow>
             <TextView
+                android:id="@+id/disp3"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="32dp"
+                android:text="0"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
                 android:id="@+id/disp1"
                 android:layout_width="0dp"
                 android:layout_height="200dp"
@@ -32,6 +43,15 @@
 
         <TableRow>
             <Button
+                android:id="@+id/add0"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight=".5"
+                android:textSize="32dp"
+                android:text="+"/>
+
+            <Button
                 android:id="@+id/add1"
                 android:gravity="center"
                 android:layout_width="0dp"
@@ -39,37 +59,26 @@
                 android:layout_weight=".5"
                 android:textSize="32dp"
                 android:text="+"/>
+        </TableRow>
 
+        <TableRow>
             <Button
-                android:id="@+id/add2"
+                android:id="@+id/sub0"
                 android:gravity="center"
                 android:layout_width="0dp"
                 android:layout_height="100dp"
                 android:layout_weight=".5"
                 android:textSize="32dp"
-                android:text="+"/>
-        </TableRow>
+                android:text="-"/>
 
-        <TableRow>
-            <TextView
-                android:id="@+id/disp3"
-                android:layout_width="0dp"
-                android:layout_height="100dp"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:textSize="32dp"
-                android:text="0"/>
-        </TableRow>
-
-        <TableRow>
             <Button
-                android:id="@+id/reset"
+                android:id="@+id/sub1"
                 android:gravity="center"
                 android:layout_width="0dp"
                 android:layout_height="100dp"
-                android:layout_weight="1"
+                android:layout_weight=".5"
                 android:textSize="32dp"
-                android:text="Reset"/>
+                android:text="-"/>
         </TableRow>
     </TableLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
