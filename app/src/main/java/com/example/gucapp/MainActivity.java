@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
                 inst.calculateEntered();
                 disp1.setText("" + inst.getEnterCount());
                 disp3.setText("" + inst.getEnteredMarket());
-                vibe.vibrate(80);
+                vibe.vibrate(40);
             }
         });
 
@@ -51,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
                 inst.calculateEntered();
                 disp2.setText("" + inst.getLeaveCount());
                 disp3.setText("" + inst.getEnteredMarket());
-                vibe.vibrate(80);
+                vibe.vibrate(40);
             }
         });
 
@@ -64,7 +64,7 @@ public class MainActivity extends AppCompatActivity {
                 inst.calculateEntered();
                 disp1.setText("" + inst.getEnterCount());
                 disp3.setText("" + inst.getEnteredMarket());
-                vibe.vibrate(80);
+                vibe.vibrate(40);
             }
         });
 
@@ -77,7 +77,7 @@ public class MainActivity extends AppCompatActivity {
                 inst.calculateEntered();
                 disp2.setText("" + inst.getLeaveCount());
                 disp3.setText("" + inst.getEnteredMarket());
-                vibe.vibrate(80);
+                vibe.vibrate(40);
             }
         });
     }
