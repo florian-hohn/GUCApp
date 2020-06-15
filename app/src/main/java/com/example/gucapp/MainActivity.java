@@ -2,7 +2,9 @@ package com.example.gucapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.os.Bundle;
+import android.os.Vibrator;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -16,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         final CounterInstance inst = new CounterInstance();
+        final Vibrator vibe = (Vibrator) MainActivity.this.getSystemService(Context.VIBRATOR_SERVICE);
 
         Button btn1 = findViewById(R.id.add1);
         Button btn2 = findViewById(R.id.add2);
@@ -34,6 +37,7 @@ public class MainActivity extends AppCompatActivity {
                 inst.calculateEntered();
                 disp1.setText("" + inst.getEnterCount());
                 disp3.setText("" + inst.getEnteredMarket());
+                vibe.vibrate(80);
             }
         });
 
@@ -46,6 +50,7 @@ public class MainActivity extends AppCompatActivity {
                 inst.calculateEntered();
                 disp2.setText("" + inst.getLeaveCount());
                 disp3.setText("" + inst.getEnteredMarket());
+                vibe.vibrate(80);
             }
         });
 
@@ -56,6 +61,7 @@ public class MainActivity extends AppCompatActivity {
                 disp1.setText("" + inst.getEnterCount());
                 disp2.setText("" + inst.getLeaveCount());
                 disp3.setText("" + inst.getEnteredMarket());
+                vibe.vibrate(80);
             }
         });
     }
